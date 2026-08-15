@@ -1,8 +1,7 @@
-{
-    "position": "bottom", 
+{ "position": "bottom", 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["bluetooth","network","battery"],
+    "modules-right": ["network","bluetooth","backlight","pulseaudio","battery"],
     // Modules configuration
     "hyprland/workspaces": {
 	"on-click": "activate",
@@ -26,12 +25,15 @@
 	    "3": [],
 	    "4": [],
 	    "5": [],
-	    "6": []
+	    "6": [],
+	    "7": [],
+	    "8": [],
+	    "9": []
 	}
     },
 
   "clock": {
-		"format": "{:%Y.%m.%d | %H:%M}"
+		"format": "{:%b %d %a | %H:%M}"
 	},
 
 	"battery": {
@@ -53,10 +55,22 @@
 	},
 
 	"bluetooth": {
-	    "format": " ",
-	    "format-off": "󰂲 ",
-	    "format-disabled": "󰂲 ",
-	    "format-connected": "󰂱 "
+	    "format": "",
+	    "format-off": "󰂲",
+	    "format-disabled": "󰂲",
+	    "format-connected": "󰂱"
+	},
+	"pulseaudio": {
+	    "format": "{icon} {volume}%",
+	    "format-muted": " ",
+	    "format-icons": {
+		"headphone": " ",
+		"headset": " ",
+		"default": [" "]
+	    }
+	},
+	"backlight": {
+	    "format": "{icon} {percent}%",
+	    "format-icons": [""]
 	}
-
 }
