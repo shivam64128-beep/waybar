@@ -16,7 +16,7 @@ window#waybar {
     color: #c0caf5;
 }
 
-#clock, #battery, #network, #bluetooth {
+#backlight, #clock, #battery, #network, #bluetooth ,#pulseaudio {
 	color: #7aa2f7;
 	padding: 0px 10px;
 }
