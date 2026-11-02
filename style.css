@@ -1,22 +1,97 @@
 * {
     font-family: 'JetBrainsMono Nerd Font';
-    font-size: 15px;
+    font-size: 16px;
+}
+
+#waybar > box {
+    background-color: rgba(30, 30, 46, 0.80);
+    border-radius: 6px;
+    margin: 4px 4px;
+    padding: 0px 0px;
 }
 
 window#waybar {
+    /* background: #1a1b26; */
+    background-color: transparent;
+}
+
+#pulseaudio {
     background: #1a1b26;
+    color: #2ac3de;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
 }
 
-#workspaces button {
-    padding: 0px 5px;
-    color: #7aa2f7;
+#bluetooth {
+    background: #1a1b26;
+    color: #9ece6a;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
 }
 
-#workspaces button.empty {
-    color: #c0caf5;
+#backlight {
+    background: #1a1b26;
+    color: #ff9e64;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
 }
 
-#backlight, #clock, #battery, #network, #bluetooth ,#pulseaudio {
-	color: #7aa2f7;
-	padding: 0px 10px;
+#clock {
+    background: #1a1b26;
+    color: #2ac3de;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+
+#battery {
+    background: #1a1b26;
+    color: #bb9af7;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+
+#network {
+    background: #1a1b26;
+    color: #f7768e;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+
+#cpu {
+    background: #1a1b26;
+    color: #f7768e;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+
+#memory {
+    background: #1a1b26;
+    color: #ff9e64;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+
+#disk {
+    background: #1a1b26;
+    color: #9ece6a;
+    padding: 0px 10px;
+    background-color: rgba(30, 30, 46, 0.85);
+    border-radius: 6px;
+    margin: 2px 6px;
 }
