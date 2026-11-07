@@ -1,11 +1,12 @@
 { 
     "position": "top", 
-    "modules-left": ["cpu","memory","disk"],
+    "modules-left": ["cpu","memory","temperature"],
     "modules-center": ["clock"],
     "modules-right": ["network","bluetooth","backlight","pulseaudio","battery"],
 
     "clock": {
-	"format": "{:%d/%m/%Y  %A  %H:%M}"
+	"format": "{:%H:%M}",
+	"format-alt": "{:%a %d %h %Y}"
     },
 
     "battery": {
@@ -18,6 +19,28 @@
 	    "default": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
 	},
 	"format-full": "󰂅"
+    },
+
+    "group/tray-expander": {
+	"orientation": "inherit",
+	"drawer": {
+	    "transition-duration": 0,
+	    "children-class": "tray-group-item"
+	},
+	"modules": ["custom/expand-icon", "tray"]
+    },
+    "custom/expand-icon": {
+	"format": "",
+	"tooltip": false,
+	"on-scroll-up": "",
+	"on-scroll-down": "",
+	"on-scroll-left": "",
+	"on-scroll-right": ""
+    },
+
+    "tray": {
+	"icon-size": 16,
+	"spacing": 17
     },
 
     "network": {
@@ -48,7 +71,7 @@
 
     "cpu": {
 	"format": " CPU {usage}%",
-	"interval": 2
+	"interval": 1
     },
 
     "memory": {
@@ -60,5 +83,11 @@
 	"format": " Disk {used}",
 	"path": "/",
 	"interval": 60
+    },
+
+    "temperature": {
+	"format": " {temperatureC}°C",
+	"critical-threshold": 85
     }
+
 }
